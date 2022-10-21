@@ -6,4 +6,12 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func(List list1) {
+  List x = [8];
+  x[0] = list1[list1.length - 1];
+  return x;
+}
+
+void main() {
+  print(func([5, 4, 3, 2, 8]));
+}

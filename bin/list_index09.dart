@@ -6,4 +6,18 @@
     Returns:
         bool: return answer
 */
-void main() {}
+bool func(List list1) {
+  int i = 0;
+  int sum = 0;
+  while (i < list1.length) {
+    if (list1[i] == list1[i + 1]) {
+      sum += 1;
+    }
+    i = i + 1;
+  }
+  return list1.length == sum;
+}
+
+void main() {
+  print(func([2, 2, 1, 2]));
+}

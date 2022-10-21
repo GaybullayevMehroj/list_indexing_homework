@@ -7,4 +7,12 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func(List list1, int i) {
+  List x = [5];
+  x[0] = list1[i];
+  return x;
+}
+
+void main() {
+  print(func([5, 7, 8, 3, 1], 2));
+}
