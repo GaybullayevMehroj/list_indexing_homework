@@ -6,4 +6,10 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func(List none) {
+  return none;
+}
+
+void main() {
+  print(func([]));
+}
